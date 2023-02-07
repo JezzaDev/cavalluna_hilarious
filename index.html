@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Cavalluna Game - Hilarious</title>
+    </head>
+
+    <body class="body_game">
+        <!-- view -->
+        <main>
+
+            <!-- Header -->
+            <header class="header_game">
+                <!-- Proxi Logo -->
+                <div class="logo_header__proxi">
+                    <img src="assets/Logo_Proximus.png" alt="proximus logo">
+                </div>
+                <!-- Enjoy Logo -->
+                <div class="logo_header__enjoy">
+                    <img src="assets/Logo_Enjoy.png" alt="enjoy logo">
+                </div>
+                <!-- Lang Btn -->
+                <div class="lang_container">
+                    <button class="lang_btn">Fr <img src="assets/Arrow.png" alt="" class="arrow_lang"> </button>
+                    <button class="lang_btn">Nl <img src="assets/Arrow.png" alt="" class="arrow_lang"> </button>
+                </div>
+            </header>
+
+            <!-- Game container -->
+            <div class="game_container">
+
+                <!-- Game infos -->
+                <div class="game_infos">
+                    <!-- Steps -->
+                    <div class="game_infos__btn steps_infos">
+                        <p class="game_steps">étape <span class="currentStep">1</span> / <span class="forwardSteps">7</span></p>
+                    </div>
+                    <!-- Life -->
+                    <div class="game_infos__btn lifes_infos">
+                        <div class="life_container">
+                            <div class="game_life">
+                                <img src="assets/pierre_precieuse.png" alt="gemme_life" class="life_img">
+                            </div>
+                            <div class="game_life">
+                                <img src="assets/pierre_precieuse.png" alt="gemme_life" class="life_img">
+                            </div>
+                            <div class="game_life">
+                                <img src="assets/pierre_precieuse.png" alt="gemme_life" class="life_img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- bubble Horse finder -->
+                <div class="game_horse_finder">
+                    <div class="horse_finder_container">
+                        <img src="horses/01.png" alt="Image du cheval à trouver" class="horse_finder__img">
+                    </div>
+                </div>
+
+                <!-- ANSWER CONTAINER -->
+                <div class="game_answer_container">
+                    <div class="bubbles">
+                        <img src="answers/01.png" alt="Réponse Cheval 01" class="bubbles_img">
+                    </div>
+                    <div class="bubbles">
+                        <img src="answers/02.png" alt="Réponse Cheval 02" class="bubbles_img">
+                    </div>
+                    <div class="bubbles">
+                        <img src="answers/03.png" alt="Réponse Cheval 03" class="bubbles_img">
+                    </div>
+                    <div class="bubbles">
+                        <img src="answers/04.png" alt="Réponse Cheval 04" class="bubbles_img">
+                    </div>
+                    <div class="bubbles">
+                        <img src="answers/05.png" alt="Réponse Cheval 05" class="bubbles_img">
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

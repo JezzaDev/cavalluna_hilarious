@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img, picture, svg {
+  max-width: 100%;
+  display: block;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #aaa;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../backgrounds/01.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header_game {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  height: 10vh;
+}
+.header_game .lang_container {
+  width: 48px;
+  height: 26px;
+  overflow: hidden;
+}
+.header_game .lang_container .lang_btn {
+  width: 48px;
+  height: 26px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: inherit;
+  color: white;
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+}
+
+.game_container {
+  width: 100%;
+  height: 90vh;
+  padding: 80px 16px 0 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.game_infos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.game_infos .game_infos__btn {
+  min-width: 100px;
+  background-image: url("../../assets/diamant_btn.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 8px 16px;
+}
+.game_infos .game_infos__btn .game_steps {
+  font-size: 18px;
+  color: white;
+}
+.game_infos .lifes_infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+.game_infos .lifes_infos .life_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.game_infos .lifes_infos .game_life .life_img {
+  height: 30px;
+}
+
+.game_horse_finder {
+  border: 1px solid white;
+  margin: 0 auto;
+  max-width: 80%;
+  border-radius: 50%;
+}
+.game_horse_finder .horse_finder_container {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.game_horse_finder .horse_finder_container .horse_finder__img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.game_answer_container {
+  width: 100%;
+  padding: 16px;
+  height: 27vh;
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  display: flex;
+}
+.game_answer_container .bubbles {
+  cursor: pointer;
+  position: absolute;
+  width: 20%;
+  max-width: 100px;
+}
+.game_answer_container .bubbles:hover {
+  opacity: 0.7 !important;
+}
+.game_answer_container .bubbles:first-child {
+  top: 0;
+  left: 16px;
+}
+.game_answer_container .bubbles:last-child {
+  top: 0;
+  right: 16px;
+}
+.game_answer_container .bubbles:nth-child(2), .game_answer_container .bubbles:nth-child(4) {
+  top: 50%;
+}
+.game_answer_container .bubbles:nth-child(2) {
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.game_answer_container .bubbles:nth-child(4) {
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+.game_answer_container .bubbles:nth-child(3) {
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}/*# sourceMappingURL=main.css.map */

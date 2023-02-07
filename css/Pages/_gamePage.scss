@@ -1,0 +1,175 @@
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../backgrounds/01.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+// Header
+.header_game{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    height: 10vh;
+
+    .lang_container{
+        width: 48px;
+        height: 26px;
+        overflow: hidden;
+
+        .lang_btn{
+            width: 48px;
+            height: 26px;   
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: inherit;
+            color: white;
+            text-transform: uppercase;
+            font-family: Helvetica, sans-serif;
+        }
+    }
+}
+
+// Game Container
+.game_container{
+    width: 100%;
+    height: 90vh;
+    padding: 80px $padding_page 0 $padding_page;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+    
+}
+
+// Game Infos
+.game_infos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .game_infos__btn{
+        min-width: 100px;
+        background-image: url("../../assets/diamant_btn.png");
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding: $padding_btn;
+        
+        .game_steps{
+            font-size: $step_fsize;
+            color: white;
+        }
+    }
+
+    // Lifes
+    .lifes_infos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: $padding_btn;
+        
+        .life_container{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .game_life{
+            
+            .life_img{
+                // height: 100%;
+                height: 30px;
+            }
+        }
+    }
+}
+
+
+// Horse Finder
+.game_horse_finder{
+    border: 1px solid white;
+    margin: 0 auto;
+    max-width: 80%;
+    border-radius: 50%;
+
+    .horse_finder_container{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 5px solid white;
+
+        .horse_finder__img{
+            max-width: 300px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+// Answers
+.game_answer_container{
+    width: 100%;
+    padding: $padding_page;
+    height: 27vh;
+    position: absolute;
+    bottom: 5vh;
+    left: 0;
+
+    display: flex;
+    
+    .bubbles{
+        cursor: pointer;
+        position: absolute;
+        width: 20%;
+        max-width: 100px;
+
+        &:hover{
+            opacity: .7 !important;
+        }
+
+        &:first-child{
+            top: 0;
+            left: $padding_page;
+        }
+        &:last-child{
+            top: 0;
+            right: $padding_page;
+        }
+
+        &:nth-child(2), &:nth-child(4){
+            top: 50%;
+        }
+
+        &:nth-child(2){
+            left: 30%;
+            transform: translate(-50%, -50%);
+        }
+        &:nth-child(4){
+            left: 70%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:nth-child(3){
+            bottom: $padding_page;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .bubbles_img{
+            // width: 80px;
+        }
+    }
+}

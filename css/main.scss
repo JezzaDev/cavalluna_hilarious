@@ -1,0 +1,11 @@
+// import Utils - 
+@import "Utils/variables";
+// import base - ( regles globales de tout le site )
+@import "base/base";
+// import composants - ( bloc BEM independants, btn )
+
+// import layout - ( reutilisable bloc, header, nav, footer )
+
+// import pages - ( relatif à une page en particulier )
+@import "Pages/gamePage";
+// import themes - ( theme saison, couleurs etc )
